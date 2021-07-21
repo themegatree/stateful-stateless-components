@@ -10,24 +10,24 @@ class Colour extends Component {
     }
 
     red = () => {
-        this.setState({color:"red"});
-        this.setState({message: "It's Charmander"})
+        this.setState({color:"DarkRed"});
+        this.setState({message: "It's Charmander!"})
     }
 
     blue = () => {
-        this.setState({color:"blue"});
-        this.setState({message:"It's Squirtle"})
+        this.setState({color:"DarkBlue"});
+        this.setState({message:"It's Squirtle!"})
     }
 
     green = () => {
-        this.setState({color:"green"});
-        this.setState({message:"It's Bulbasaur"})
+        this.setState({color:"DarkGreen"});
+        this.setState({message:"It's Bulbasaur!"})
     } 
 
     render() {
         return (
         <div style={{color:this.state.color}}>
-            <h1>Who's that Pokemon?</h1>
+            <h1>Who's that Pokémon?</h1>
             <button onClick={this.green}>green</button>
             <button onClick={this.red}>red</button>
             <button onClick={this.blue}>blue</button>
